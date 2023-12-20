@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="honey.css">
+    <title>Period Tracker App</title>
+</head>
+<body>
+
+    <header>
+        <h1>Period Tracker</h1>
+    </header>
+
+    <section id="instructions">
+        <p>Welcome to the Period Tracker app! To use the app, enter the date of your latest period below. 
+            The app will predict your next period based on a 28-day cycle. In this app you can add as many 
+            dates you want but the latest date entered will be the ones that get predicted by the system. </p>
+    </section>
+
+    <main>
+
+        <div id="cycle-predictions">
+            <h2>Cycle And Fertile Days Predictions</h2>
+            <p id="next-prediction"> <span id="prediction-date"></span></p>
+        </div>
+        
+        <div id="fertile-days"></div>
+        <div id="non-fertile-days"> </div>
+
+        <div id="period-form" class="form-container">
+            <h2>Add Period</h2>
+            <form onsubmit="addPeriod(event)">
+                <label for="period-date">Date:</label>
+                <input type="date" id="period-date" required>
+                <button type="submit">Add Period</button>
+            </form>
+        </div>
+        <div id="period-list" class="form-container">
+            <h2>Period History</h2>
+            <ul id="period-history"></ul>
+        </div>
+
+        
+
+    </main>
+    <script src="honey.js"></script>
+</body>
+</html>

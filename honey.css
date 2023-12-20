@@ -1,0 +1,105 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #87CEEB, #FFC0CB); 
+
+}
+
+header {
+    border-top: 10px solid #fff;
+    background-color: #FFC0CB; 
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 10px solid #fff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#instructions {
+    text-align: center;
+}
+
+#instructions p {
+    font-size: 18px;
+    color: #0f0e0e;
+    line-height: 1.5;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    
+}
+
+.form-container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #0eabe9; 
+    color: #fff;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cycle-predictions, #period-list {
+    text-align: center;
+}
+
+#cycle-predictions h2, #period-list h2 {
+    margin-bottom: 10px;
+}
+
+#next-prediction, #non-fertile-days, #fertile-days{
+    font-weight: bold;
+}
+
+#fertile-days:hover,
+#non-fertile-days:hover {
+    background-color: #FF1493; /* Deep Pink */
+}
+
+
+.reset-button {
+   background-color: #0eabe9; 
+    color: #fff;
+    cursor: pointer;
+    margin-left: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+}

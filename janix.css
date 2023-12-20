@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #212121;
+}
+
+.game-board{
+    height: 350px;
+    width: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    padding: 5px 5px;
+}
+
+.title h3{
+    font-size: 27px;
+    color: #212121; 
+}
+
+.result{
+    height: 50px;
+    width: 150px;
+    background-color: brown;
+    border-radius: 10px;
+    transition: .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+.status{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.input-area{
+    display: flex;
+}
+
+.input{
+    height: 40px;
+    background-color: #5c5a5a;
+   display: flex;
+   padding: 10px 10px;
+}
+
+.input input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #fff;
+}
+
+button{
+    border: none;
+    background-color: brown;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#pg{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-radius: 5px;
+    display: none;
+}
+
+.fr{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: none;
+}
